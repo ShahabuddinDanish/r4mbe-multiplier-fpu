@@ -1,0 +1,29 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Changed wire load model for 'alt1' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Updating graph... (UID-83)
+Warning: Design 'fpnew_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : fpnew_top
+Version: S-2021.06-SP4
+Date   : Tue Feb 20 02:36:40 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+MY_CLK           2.11   {0 1.055}           d         {clk_i}
+--------------------------------------------------------------------------------
+1

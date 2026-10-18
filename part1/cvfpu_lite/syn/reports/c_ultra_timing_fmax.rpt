@@ -1,0 +1,91 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpnew_top
+Version: S-2021.06-SP4
+Date   : Tue Feb 20 14:10:57 2024
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/mid_pipe_sum_q_reg[1][24]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: status_o[UF]
+            (output port clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpnew_top          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/mid_pipe_sum_q_reg[1][24]/CK (DFFR_X1)
+                                                          0.00       0.00 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[2].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/mid_pipe_sum_q_reg[1][24]/QN (DFFR_X1)
+                                                          0.07       0.07 r
+  U1194/ZN (AND3_X1)                                      0.05       0.12 r
+  U1076/ZN (AND2_X1)                                      0.06       0.18 r
+  U1625/ZN (AND2_X1)                                      0.05       0.23 r
+  U1858/ZN (AND3_X1)                                      0.05       0.28 r
+  U1713/ZN (OR2_X1)                                       0.03       0.31 r
+  U1857/ZN (OAI21_X1)                                     0.03       0.33 f
+  U1881/ZN (OAI21_X1)                                     0.04       0.37 r
+  U1870/ZN (AND2_X1)                                      0.05       0.42 r
+  U1800/ZN (OAI21_X1)                                     0.03       0.46 f
+  U2049/ZN (AOI21_X1)                                     0.05       0.50 r
+  U2063/ZN (OAI21_X1)                                     0.04       0.54 f
+  U1581/ZN (AND2_X2)                                      0.05       0.59 f
+  U1253/ZN (OR2_X1)                                       0.06       0.64 f
+  U1674/ZN (NAND2_X1)                                     0.04       0.68 r
+  U1860/ZN (NAND3_X1)                                     0.05       0.73 f
+  U1822/ZN (NAND2_X1)                                     0.05       0.78 r
+  U2088/ZN (OR2_X2)                                       0.06       0.85 r
+  U2142/ZN (INV_X1)                                       0.03       0.88 f
+  U2123/ZN (NAND2_X1)                                     0.03       0.91 r
+  U1132/ZN (AND4_X1)                                      0.08       0.98 r
+  U2124/ZN (OAI222_X1)                                    0.05       1.04 f
+  U2126/ZN (AND2_X1)                                      0.04       1.08 f
+  U1781/ZN (OR2_X1)                                       0.06       1.14 f
+  U1728/ZN (NOR2_X1)                                      0.05       1.18 r
+  U2209/ZN (AND2_X2)                                      0.06       1.25 r
+  U2213/ZN (AND2_X1)                                      0.05       1.30 r
+  U2214/ZN (NOR2_X1)                                      0.02       1.32 f
+  U1671/ZN (OAI21_X1)                                     0.05       1.36 r
+  U1177/ZN (AND3_X2)                                      0.06       1.43 r
+  U1209/ZN (NAND2_X1)                                     0.03       1.46 f
+  U1686/ZN (NAND4_X1)                                     0.04       1.50 r
+  U2506/ZN (NAND3_X1)                                     0.04       1.53 f
+  U1730/ZN (OAI21_X1)                                     0.04       1.57 r
+  U1805/ZN (AND4_X2)                                      0.08       1.65 r
+  U1823/ZN (NAND2_X1)                                     0.04       1.69 f
+  U1895/ZN (NAND2_X1)                                     0.03       1.72 r
+  U1826/ZN (OAI211_X1)                                    0.04       1.77 f
+  U2583/ZN (INV_X1)                                       0.04       1.80 r
+  U1210/ZN (NAND4_X1)                                     0.04       1.84 f
+  U1819/ZN (NAND2_X1)                                     0.03       1.87 r
+  U1820/ZN (AND2_X1)                                      0.05       1.92 r
+  status_o[UF] (out)                                      0.02       1.94 r
+  data arrival time                                                  1.94
+
+  clock MY_CLK (rise edge)                                2.51       2.51
+  clock network delay (ideal)                             0.00       2.51
+  clock uncertainty                                      -0.07       2.44
+  output external delay                                  -0.50       1.94
+  data required time                                                 1.94
+  --------------------------------------------------------------------------
+  data required time                                                 1.94
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,294 @@
+<svg viewBox="0 0 920 490" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Arial,sans-serif">
+<rect width="920" height="490" fill="#0d1117" rx="10"/>
+<text x="460" y="26" text-anchor="middle" fill="#e6edf3" font-size="14" font-weight="bold">Partial Product Array — R4-MBE (11×11 → 22-bit, Bewick sign-extension)</text>
+
+<!-- Column index labels (even cols + col 21) -->
+<text x="847.3" y="42" text-anchor="middle" fill="#8b949e" font-size="9">0</text>
+<text x="776.4" y="42" text-anchor="middle" fill="#8b949e" font-size="9">2</text>
+<text x="705.5" y="42" text-anchor="middle" fill="#8b949e" font-size="9">4</text>
+<text x="634.5" y="42" text-anchor="middle" fill="#8b949e" font-size="9">6</text>
+<text x="563.6" y="42" text-anchor="middle" fill="#8b949e" font-size="9">8</text>
+<text x="492.7" y="42" text-anchor="middle" fill="#8b949e" font-size="9">10</text>
+<text x="421.8" y="42" text-anchor="middle" fill="#8b949e" font-size="9">12</text>
+<text x="350.9" y="42" text-anchor="middle" fill="#8b949e" font-size="9">14</text>
+<text x="280.0" y="42" text-anchor="middle" fill="#8b949e" font-size="9">16</text>
+<text x="209.1" y="42" text-anchor="middle" fill="#8b949e" font-size="9">18</text>
+<text x="138.2" y="42" text-anchor="middle" fill="#8b949e" font-size="9">20</text>
+<text x="102.7" y="42" text-anchor="middle" fill="#8b949e" font-size="9">21</text>
+<text x="847.3" y="50" text-anchor="middle" fill="#6e7681" font-size="8">LSB</text>
+<text x="102.7" y="52" text-anchor="middle" fill="#6e7681" font-size="8">MSB</text>
+
+<!-- Vertical grid lines, before-compression zone (y=44 to y=304) -->
+<line x1="847.3" y1="44" x2="847.3" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="811.8" y1="44" x2="811.8" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="776.4" y1="44" x2="776.4" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="740.9" y1="44" x2="740.9" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="705.5" y1="44" x2="705.5" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="670.0" y1="44" x2="670.0" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="634.5" y1="44" x2="634.5" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="599.1" y1="44" x2="599.1" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="563.6" y1="44" x2="563.6" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="528.2" y1="44" x2="528.2" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="492.7" y1="44" x2="492.7" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="457.3" y1="44" x2="457.3" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="421.8" y1="44" x2="421.8" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="386.4" y1="44" x2="386.4" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="350.9" y1="44" x2="350.9" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="315.5" y1="44" x2="315.5" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="280.0" y1="44" x2="280.0" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="244.5" y1="44" x2="244.5" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="209.1" y1="44" x2="209.1" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="173.6" y1="44" x2="173.6" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="138.2" y1="44" x2="138.2" y2="304" stroke="#21262d" stroke-width="0.8"/>
+<line x1="102.7" y1="44" x2="102.7" y2="304" stroke="#21262d" stroke-width="0.8"/>
+
+<text x="10" y="160" text-anchor="middle" fill="#8b949e" font-size="10" transform="rotate(-90,10,160)">Before compression</text>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ROW 1: pp1  (cols 0–11, red)  starts at right = LSB end   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<rect x="439.6" y="50.5" width="424.0" height="16.4" fill="none" stroke="#ff7b72" stroke-width="0.9" rx="2" opacity="0.45"/>
+<text x="77" y="63" text-anchor="end" fill="#ff7b72" font-size="10" font-weight="bold">pp1</text>
+<circle cx="847.3" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="811.8" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="776.4" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="740.9" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="705.5" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="670.0" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="634.5" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="599.1" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="563.6" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="528.2" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="492.7" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<circle cx="457.3" cy="59" r="5.2" fill="#ff7b72" opacity="0.88"/>
+<!-- S at col 0 (just right of box); S̄ at col 14 (code: fa11 uses ~s1 at col 14); no "1" for pp1 -->
+<text x="846.1" y="80" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<text x="425.9" y="64" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<line x1="418.9" y1="52.0" x2="432.9" y2="52.0" stroke="#e3b341" stroke-width="1.3"/>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ROW 2: pp2  (cols 2–13, amber)                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<rect x="368.7" y="79.8" width="424.0" height="16.4" fill="none" stroke="#ffa657" stroke-width="0.9" rx="2" opacity="0.45"/>
+<text x="77" y="92" text-anchor="end" fill="#ffa657" font-size="10" font-weight="bold">pp2</text>
+<circle cx="776.4" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="740.9" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="705.5" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="670.0" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="634.5" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="599.1" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="563.6" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="528.2" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="492.7" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="457.3" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="421.8" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="386.4" cy="88" r="5.2" fill="#ffa657" opacity="0.88"/>
+<!-- S at col 2; S̄ at col 14 (code: ~s2 in fa11); 1 at col 15 (code: 1'b1 in fa42) -->
+<text x="775.7" y="109" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<text x="350.9" y="92" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<line x1="343.9" y1="80.0" x2="357.9" y2="80.0" stroke="#e3b341" stroke-width="1.3"/>
+<text x="315.5" y="92" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold">1</text>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ROW 3: pp3  (cols 4–15, purple)                           -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<rect x="297.8" y="115.8" width="424.0" height="16.4" fill="none" stroke="#bc8cff" stroke-width="0.9" rx="2" opacity="0.45"/>
+<text x="77" y="128" text-anchor="end" fill="#bc8cff" font-size="10" font-weight="bold">pp3</text>
+<circle cx="705.5" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="670.0" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="634.5" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="599.1" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="563.6" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="528.2" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="492.7" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="457.3" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="421.8" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="386.4" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="350.9" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="315.5" cy="124" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<!-- S at col 4; S̄ at col 16 (code: ~s3 in ha8); 1 at col 17 (code: 1'b1 in fa43) -->
+<text x="705.3" y="145" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<text x="280.0" y="128" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<line x1="273.0" y1="116.0" x2="287.0" y2="116.0" stroke="#e3b341" stroke-width="1.3"/>
+<text x="244.5" y="128" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold">1</text>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ROW 4: pp4  (cols 6–17, orange)                           -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<rect x="226.8" y="151.8" width="424.0" height="16.4" fill="none" stroke="#f0883e" stroke-width="0.9" rx="2" opacity="0.45"/>
+<text x="77" y="164" text-anchor="end" fill="#f0883e" font-size="10" font-weight="bold">pp4</text>
+<circle cx="634.5" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="599.1" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="563.6" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="528.2" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="492.7" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="457.3" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="421.8" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="386.4" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="350.9" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="315.5" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="280.0" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<circle cx="244.5" cy="160" r="5.2" fill="#f0883e" opacity="0.88"/>
+<!-- S at col 6; S̄ at col 18 (code: ~s4 in fa24); 1 at col 19 (code: 1'b1 in ha5) -->
+<text x="634.3" y="181" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<text x="209.1" y="164" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<line x1="202.1" y1="152.0" x2="216.1" y2="152.0" stroke="#e3b341" stroke-width="1.3"/>
+<text x="173.6" y="164" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold">1</text>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ROW 5: pp5  (cols 8–19, green)                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<rect x="155.9" y="187.8" width="424.0" height="16.4" fill="none" stroke="#3fb950" stroke-width="0.9" rx="2" opacity="0.45"/>
+<text x="77" y="200" text-anchor="end" fill="#3fb950" font-size="10" font-weight="bold">pp5</text>
+<circle cx="563.6" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="528.2" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="492.7" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="457.3" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="421.8" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="386.4" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="350.9" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="315.5" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="280.0" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="244.5" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="209.1" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<circle cx="173.6" cy="196" r="5.2" fill="#3fb950" opacity="0.88"/>
+<!-- S at col 8; S̄ at col 20 (code: ~s5 in fa44); 1 at col 21 (code: 1'b1 in ha6) -->
+<text x="563.4" y="217" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<text x="138.2" y="200" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold" font-family="Georgia,serif" font-style="italic">S</text>
+<line x1="131.2" y1="188.0" x2="145.2" y2="188.0" stroke="#e3b341" stroke-width="1.3"/>
+<text x="102.7" y="200" text-anchor="middle" fill="#e3b341" font-size="12" font-weight="bold">1</text>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ROW 6: pp6  (cols 10–21, blue)  always positive — no sign markers -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<rect x="85.0" y="223.8" width="424.0" height="16.4" fill="none" stroke="#388bfd" stroke-width="0.9" rx="2" opacity="0.45"/>
+<text x="77" y="236" text-anchor="end" fill="#388bfd" font-size="10" font-weight="bold">pp6</text>
+<circle cx="492.7" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="457.3" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="421.8" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="386.4" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="350.9" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="315.5" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="280.0" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="244.5" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="209.1" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="173.6" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="138.2" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+<circle cx="102.7" cy="232" r="5.2" fill="#388bfd" opacity="0.88"/>
+
+<!-- Separator and compression label -->
+<text x="71" y="258" text-anchor="end" fill="#8b949e" font-size="16" font-weight="bold">+</text>
+<line x1="65" y1="266" x2="880" y2="266" stroke="#30363d" stroke-width="1.8"/>
+<text x="460" y="282" text-anchor="middle" fill="#8b949e" font-size="11">3-layer ALAP Dadda compression  (44 FA + 13 HA)  ↓</text>
+
+<!-- Vertical grid lines, after-compression zone (y=286 to y=386) -->
+<line x1="847.3" y1="286" x2="847.3" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="811.8" y1="286" x2="811.8" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="776.4" y1="286" x2="776.4" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="740.9" y1="286" x2="740.9" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="705.5" y1="286" x2="705.5" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="670.0" y1="286" x2="670.0" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="634.5" y1="286" x2="634.5" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="599.1" y1="286" x2="599.1" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="563.6" y1="286" x2="563.6" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="528.2" y1="286" x2="528.2" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="492.7" y1="286" x2="492.7" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="457.3" y1="286" x2="457.3" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="421.8" y1="286" x2="421.8" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="386.4" y1="286" x2="386.4" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="350.9" y1="286" x2="350.9" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="315.5" y1="286" x2="315.5" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="280.0" y1="286" x2="280.0" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="244.5" y1="286" x2="244.5" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="209.1" y1="286" x2="209.1" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="173.6" y1="286" x2="173.6" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="138.2" y1="286" x2="138.2" y2="386" stroke="#21262d" stroke-width="0.8"/>
+<line x1="102.7" y1="286" x2="102.7" y2="386" stroke="#21262d" stroke-width="0.8"/>
+
+<text x="10" y="320" text-anchor="middle" fill="#8b949e" font-size="10" transform="rotate(-90,10,320)">After</text>
+
+<!-- Sum row (22 bits across all columns) -->
+<text x="77" y="300" text-anchor="end" fill="#bc8cff" font-size="10" font-weight="bold">sum</text>
+<circle cx="847.3" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="811.8" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="776.4" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="740.9" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="705.5" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="670.0" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="634.5" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="599.1" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="563.6" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="528.2" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="492.7" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="457.3" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="421.8" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="386.4" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="350.9" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="315.5" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="280.0" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="244.5" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="209.1" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="173.6" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="138.2" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+<circle cx="102.7" cy="296" r="5.2" fill="#bc8cff" opacity="0.88"/>
+
+<!-- Carry row (22 bits) -->
+<text x="77" y="336" text-anchor="end" fill="#ffa657" font-size="10" font-weight="bold">carry</text>
+<circle cx="847.3" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="811.8" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="776.4" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="740.9" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="705.5" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="670.0" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="634.5" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="599.1" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="563.6" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="528.2" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="492.7" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="457.3" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="421.8" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="386.4" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="350.9" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="315.5" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="280.0" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="244.5" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="209.1" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="173.6" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="138.2" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+<circle cx="102.7" cy="332" r="5.2" fill="#ffa657" opacity="0.88"/>
+
+<!-- Bottom separator and 22-bit product row -->
+<line x1="65" y1="358" x2="880" y2="358" stroke="#30363d" stroke-width="1.4"/>
+<text x="77" y="392" text-anchor="end" fill="#6e7681" font-size="9">product</text>
+<circle cx="847.3" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="811.8" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="776.4" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="740.9" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="705.5" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="670.0" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="634.5" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="599.1" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="563.6" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="528.2" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="492.7" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="457.3" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="421.8" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="386.4" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="350.9" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="315.5" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="280.0" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="244.5" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="209.1" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="173.6" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="138.2" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+<circle cx="102.7" cy="388" r="5.2" fill="#e6edf3" opacity="0.55"/>
+
+<!-- Legend -->
+<rect x="85" y="408" width="10" height="10" rx="1" fill="#e6edf3" opacity="0.8"/>
+<text x="99" y="418" fill="#8b949e" font-size="10">data bit (•)</text>
+<rect x="235" y="408" width="10" height="10" rx="1" fill="#e3b341" opacity="0.8"/>
+<text x="249" y="418" fill="#8b949e" font-size="10">S = sign carry (+1 correction at LSB of each PP)</text>
+<rect x="570" y="408" width="10" height="10" rx="1" fill="#e3b341" opacity="0.8"/>
+<text x="584" y="418" fill="#8b949e" font-size="10">S̄ / 1 = Bewick sign-extension termination</text>
+<text x="460" y="438" text-anchor="middle" fill="#6e7681" font-size="9">pp6 has no sign markers — encoder e6 (bitNminus1=0) is always non-negative</text>
+</svg>
